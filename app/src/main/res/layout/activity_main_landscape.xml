@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inc.mountzoft.simplecalculator.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:textColor="#7bfaff"
+            android:textSize="20sp"
+            android:text="Give two Numbers"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userInputOne"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:background="#00EAFF">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/userInputTwo"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:background="#00EAFF">
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/btnbg"
+            android:onClick="addButtonFunction"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="260dp"
+            android:background="@drawable/btnbg"
+            android:onClick="subButtonFunction"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/mulBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="330dp"
+            android:background="@drawable/btnbg"
+            android:onClick="mulButtonFunction"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="390dp"
+            android:background="@drawable/btnbg"
+            android:onClick="divButtonFunction"
+            android:text="/" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
